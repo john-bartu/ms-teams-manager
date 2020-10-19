@@ -135,10 +135,14 @@ namespace MS_Teams_Manager
 
         private void Button_AddAccount(object sender, RoutedEventArgs e)
         {
-            ///Dodaj Konto
+            
             String newAccount = Interaction.InputBox("Podaj następny adres e-mail", "Dodawanie Adres E-mail", "user@domain.eq");
-            int newId = settings.Accounts.Add(newAccount);
-            CreateDirectory(newId);
+
+            if (newAccount.Length > 0) ;
+            {
+                int newId = settings.Accounts.Add(newAccount);
+                CreateDirectory(newId);
+            }
 
             RefreshMenu();
         }
