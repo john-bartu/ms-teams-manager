@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MS_Teams_Manager"
         mc:Ignorable="d"
         Title="MS Teams Account Manager" Height="460" Width="420" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#FFE8E8E8" Closing="Window_Closing">
-      <Grid>
+    <Grid>
 
         <StackPanel x:Name="ButtonsHolder" Height="296" Margin="10,74,10,10" VerticalAlignment="Top" Background="White">
             <StackPanel.Effect>
@@ -19,10 +19,21 @@
             <Button x:Name="defaultButton4" Content="example@domain.com" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
             <Button x:Name="defaultButton5" Content="example@domain.com" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
         </StackPanel>
-        <Button Content="Add account" VerticalAlignment="Bottom" Margin="109,0,111,10" Height="32" Background="#FF5159C4" FontSize="18" FontWeight="Bold" Foreground="White" BorderBrush="#FF7A82E6" Click="Button_AddAccount"/>
+        <Button Content="Add account" VerticalAlignment="Bottom" Margin="210,0,10,10" Height="32" Background="#FF5159C4" FontSize="18" FontWeight="Bold" Foreground="White" BorderBrush="#FF7A82E6" Click="Button_AddAccount"/>
         <Grid Margin="34,10,51,357" HorizontalAlignment="Center">
             <TextBlock HorizontalAlignment="Center" Margin="74,10,0,0" TextWrapping="Wrap" Text="MS Teams Manager" VerticalAlignment="Top" Height="39" Width="266" TextAlignment="Center" FontSize="24" FontFamily="Segoe UI Semilight" Foreground="#FF4148AC"/>
             <Image HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="59" Source="ms-teams.png"/>
         </Grid>
+        <Button x:Name="defaultButton7_Copy" Content="Settings" FontSize="18" Margin="10,381,277,10" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4" Click="defaultButton7_Copy_Click"/>
+        <Menu x:Name="SettingsMenu" HorizontalAlignment="Left" Height="156" Margin="0,265,0,0" VerticalAlignment="Top" Width="157">
+            <StackPanel x:Name="ButtonsHolder_Copy" Height="104" VerticalAlignment="Top" Background="White" Width="147">
+                <StackPanel.Effect>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="1" Opacity="0.8" RenderingBias="Quality"/>
+                </StackPanel.Effect>
+                <Button x:Name="defaultButton6" Content="Clear" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4" Click="defaultButton6_Click"/>
+                <Button x:Name="defaultButton7" Content="Close" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4" Click="defaultButton7_Click"/>
+            </StackPanel>
+        </Menu>
+   
     </Grid>
 </Window>

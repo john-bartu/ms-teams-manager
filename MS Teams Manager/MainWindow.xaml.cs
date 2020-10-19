@@ -42,6 +42,7 @@ namespace MS_Teams_Manager
             }
             
             InitializeComponent();
+            SettingsMenu.Visibility = Visibility.Hidden;
             CheckFirstLaunch();
             RefreshMenu();
         }
@@ -72,8 +73,6 @@ namespace MS_Teams_Manager
             int index = ButtonsHolder.Children.IndexOf(button);
             chooseAccount(index);
         }
-
-
 
         public void chooseAccount(int index)
         {
@@ -187,5 +186,27 @@ namespace MS_Teams_Manager
             CopyAll(diSource, diTarget);
         }
 
+        private void defaultButton7_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            SettingsMenu.Visibility = Visibility.Visible;
+        }
+
+        private void defaultButton7_Click(object sender, RoutedEventArgs e)
+        {
+            SettingsMenu.Visibility = Visibility.Hidden;
+        }
+
+        private void defaultButton6_Click(object sender, RoutedEventArgs e)
+        {
+            settings.Reset();
+            if (settings.Accounts == null)
+            {
+                settings.Accounts = new System.Collections.Specialized.StringCollection();
+            }
+            settings.Save();
+            RefreshMenu();
+
+            SettingsMenu.Visibility = Visibility.Hidden;
+        }
     }
 }
