@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace MS_Teams_Switcher
+namespace MS_Teams_Manager
 {
     /// <summary>
     /// Interaction logic for App.xaml

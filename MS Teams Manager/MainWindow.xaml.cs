@@ -19,7 +19,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MS_Teams_Switcher
+namespace MS_Teams_Manager
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

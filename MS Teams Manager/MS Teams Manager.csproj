@@ -56,7 +56,7 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>MS_Teams_Switcher.App</StartupObject>
+    <StartupObject>MS_Teams_Manager.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
