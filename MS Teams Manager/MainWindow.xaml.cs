@@ -45,10 +45,8 @@ namespace MS_Teams_Manager
 
             for (int i = 0; i < ButtonsHolder.Children.Count; i++)
             {
-
                 ButtonsHolder.Children[i].Visibility = Visibility.Hidden;
             }
-
 
             for (int i = 0; i < settings.Accounts.Count; i++)
             {
@@ -57,7 +55,6 @@ namespace MS_Teams_Manager
                 button.Click += (sender, EventArgs) => { button_Click(sender, EventArgs); };
 
                 button.Visibility = Visibility.Visible;
-
             }
 
         }
@@ -87,8 +84,6 @@ namespace MS_Teams_Manager
                     Thread.Sleep(1000);
                 }
 
-
-
                 Directory.Move(appdata + "/Microsoft/Teams", appdata + "/Microsoft/Teams" + settings.LastId.ToString());
                 Directory.Move(localappdata + "/Microsoft/Teams", localappdata + "/Microsoft/Teams" + settings.LastId.ToString());
 
@@ -97,7 +92,6 @@ namespace MS_Teams_Manager
 
                 settings.LastId = index;
 
-
                 Process.Start(appdata + "/Microsoft/Windows/Start Menu/Programs/Microsoft Teams.lnk");
                 this.Close();
             }
@@ -105,7 +99,6 @@ namespace MS_Teams_Manager
             {
                 Process.Start(appdata + "/Microsoft/Windows/Start Menu/Programs/Microsoft Teams.lnk");
                 this.Close();
-
             }
         }
 
@@ -133,8 +126,6 @@ namespace MS_Teams_Manager
             settings.IsPrepared = true;
         }
 
-
-
         private void Button_AddAccount(object sender, RoutedEventArgs e)
         {
             ///Dodaj Konto
@@ -144,7 +135,6 @@ namespace MS_Teams_Manager
 
             RefreshMenu();
         }
-
 
         public void CreateDirectory(int id)
         {
