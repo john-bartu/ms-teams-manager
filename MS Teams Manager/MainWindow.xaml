@@ -12,12 +12,12 @@
             <StackPanel.Effect>
                 <DropShadowEffect BlurRadius="10" ShadowDepth="1" Opacity="0.8" RenderingBias="Quality"/>
             </StackPanel.Effect>
-            <Button x:Name="defaultButton" Content="example@domain.com" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
-            <Button x:Name="defaultButton_Copy" Content="example@domain.com" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
-            <Button x:Name="defaultButton_Copy1" Content="example@domain.com" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
-            <Button x:Name="defaultButton_Copy2" Content="example@domain.com" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
-            <Button x:Name="defaultButton_Copy3" Content="example@domain.com" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
-            <Button x:Name="defaultButton_Copy4" Content="example@domain.com" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
+            <Button x:Name="defaultButton0" Content="example@domain.com" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
+            <Button x:Name="defaultButton1" Content="example@domain.com" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
+            <Button x:Name="defaultButton2" Content="example@domain.com" Height="40" FontSize="18" Margin="11,8,9,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
+            <Button x:Name="defaultButton3" Content="example@domain.com" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
+            <Button x:Name="defaultButton4" Content="example@domain.com" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
+            <Button x:Name="defaultButton5" Content="example@domain.com" Height="40" FontSize="18" Margin="10,8,10,0" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#FF5159C4" BorderThickness="1,1,1,4"/>
         </StackPanel>
         <Button Content="Add account" VerticalAlignment="Bottom" Margin="109,0,111,10" Height="32" Background="#FF5159C4" FontSize="18" FontWeight="Bold" Foreground="White" BorderBrush="#FF7A82E6" Click="Button_AddAccount"/>
         <Grid Margin="34,10,51,357" HorizontalAlignment="Center">
