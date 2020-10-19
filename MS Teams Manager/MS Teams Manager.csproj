@@ -30,7 +30,7 @@
     <ProductName>MS Teams Account Manager</ProductName>
     <PublisherName>Bartula Code</PublisherName>
     <SuiteName>Developing</SuiteName>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>

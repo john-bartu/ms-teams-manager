@@ -32,7 +32,15 @@ namespace MS_Teams_Manager
         Properties.Settings settings;
         public MainWindow()
         {
-            settings = Properties.Settings.Default;
+            settings = new Properties.Settings();
+            settings.Reload();
+
+            if (!settings.IsPrepared)          
+            {
+                settings.Upgrade();
+                settings.Save();
+            }
+            
             InitializeComponent();
             CheckFirstLaunch();
             RefreshMenu();
